@@ -1,0 +1,1 @@
+export const baseUrl = "https://lyrical-honeysuckle-mandrill.glitch.me"

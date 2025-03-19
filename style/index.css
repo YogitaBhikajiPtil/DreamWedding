@@ -1,3 +1,5 @@
+
+/* navbar stylig */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -24,6 +26,7 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* footer stylig */
 footer {
     background-color: #ff4081;
     color: white;
@@ -69,6 +72,9 @@ footer {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.8);
   }
+
+  /* signup styling */
+  
   
 
   

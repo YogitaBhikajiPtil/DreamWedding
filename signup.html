@@ -3,12 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Wedding</title>
+    <title>signup...</title>
+    <link rel="stylesheet" href="./style/signup.css">
     <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
     <div id="nav"></div>
+    <div id="sign">
+    <div class="signup-container">
+        <h2>Signup</h2>
+        <form id="signupForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </form>
+        <p id="error-message"></p>
+    </div>
+</div>
+    <script src="./scripts/signup.js" type="module"></script>
     <script src="./scripts/navbar.js" type="module"></script>
-    <script src="./scripts/index.js"></script>
 </body>
 </html>
