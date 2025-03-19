@@ -5,11 +5,298 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Wedding</title>
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/book.css">
 </head>
 <body>
     <div id="nav"></div>
+    <div class="sorting"> 
+        <div class="search-sort">
+            <input type="text" id="search" placeholder="Search venues..." onkeyup="searchVenues()">
+            <select id="sort" onchange="sortVenues()">
+                <option value="price">Sort by Price</option>
+            </select>
+        </div>
+        <div class="search-sort">
+            <input type="text" id="search" placeholder="Search venues..." onkeyup="searchVenues()">
+            <select id="sort" onchange="sortVenues()">
+                <option value="distance">Sort by Distance</option>
+            </select>
+        </div>
+        <div class="search-sort">
+            <input type="text" id="search" placeholder="Search venues..." onkeyup="searchVenues()">
+            <select id="sort" onchange="sortVenues()">
+                <option value="rating">Sort by Rating</option>
+            </select>
+        </div>
+    </div> 
+    <div id="venues" class="venue-grid">
+        <div class="venue-card" data-price="2000" data-distance="5" data-rating="4.5">
+            <img src="./assets/1.jpg" alt="Rose Garden">
+            <div class="venue-info">
+                <h2>Rose Garden</h2>
+                <p>Price: ₹2000 per plate</p>
+                <p>Distance: 5km | Rating: ⭐4.5</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="1500" data-distance="10" data-rating="4.0">
+            <img src="/assets/17.webp" alt="Ocean View Hall">
+            <div class="venue-info">
+                <h2>Ocean View Hall</h2>
+                <p>Price: ₹1500 per plate</p>
+                <p>Distance: 10km | Rating: ⭐4.0</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="3000" data-distance="2" data-rating="5.0">
+            <img src="./assets/3.webp" alt="Luxury Palace">
+            <div class="venue-info">
+                <h2>Luxury Palace</h2>
+                <p>Price: ₹3000 per plate</p>
+                <p>Distance: 2km | Rating: ⭐5.0</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="2000" data-distance="5" data-rating="4.5">
+            <img src="./assets/4.webp" alt="Rose Garden">
+            <div class="venue-info">
+                <h2>Rose Garden</h2>
+                <p>Price: ₹2000 per plate</p>
+                <p>Distance: 5km | Rating: ⭐4.5</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="1500" data-distance="10" data-rating="4.0">
+            <img src="./assets/5.webp" alt="Ocean View Hall">
+            <div class="venue-info">
+                <h2>Ocean View Hall</h2>
+                <p>Price: ₹1500 per plate</p>
+                <p>Distance: 10km | Rating: ⭐4.0</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="3000" data-distance="2" data-rating="5.0">
+            <img src="./assets/6.webp" alt="Luxury Palace">
+            <div class="venue-info">
+                <h2>Luxury Palace</h2>
+                <p>Price: ₹3000 per plate</p>
+                <p>Distance: 2km | Rating: ⭐5.0</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="2000" data-distance="5" data-rating="4.5">
+            <img src="./assets/7.webp" alt="Rose Garden">
+            <div class="venue-info">
+                <h2>Rose Garden</h2>
+                <p>Price: ₹2000 per plate</p>
+                <p>Distance: 5km | Rating: ⭐4.5</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="1500" data-distance="10" data-rating="4.0">
+            <img src="./assets/8.webp" alt="Ocean View Hall">
+            <div class="venue-info">
+                <h2>Ocean View Hall</h2>
+                <p>Price: ₹1500 per plate</p>
+                <p>Distance: 10km | Rating: ⭐4.0</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="3000" data-distance="2" data-rating="5.0">
+            <img src="./assets/9.webp" alt="Luxury Palace">
+            <div class="venue-info">
+                <h2>Luxury Palace</h2>
+                <p>Price: ₹3000 per plate</p>
+                <p>Distance: 2km | Rating: ⭐5.0</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="2000" data-distance="5" data-rating="4.5">
+            <img src="./assets/10.webp" alt="Rose Garden">
+            <div class="venue-info">
+                <h2>Rose Garden</h2>
+                <p>Price: ₹2000 per plate</p>
+                <p>Distance: 5km | Rating: ⭐4.5</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="1500" data-distance="10" data-rating="4.0">
+            <img src="./assets/11.webp" alt="Ocean View Hall">
+            <div class="venue-info">
+                <h2>Ocean View Hall</h2>
+                <p>Price: ₹1500 per plate</p>
+                <p>Distance: 10km | Rating: ⭐4.0</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="3000" data-distance="2" data-rating="5.0">
+            <img src="./assets/12.webp" alt="Luxury Palace">
+            <div class="venue-info">
+                <h2>Luxury Palace</h2>
+                <p>Price: ₹3000 per plate</p>
+                <p>Distance: 2km | Rating: ⭐5.0</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="2000" data-distance="5" data-rating="4.5">
+            <img src="./assets/13.webp" alt="Rose Garden">
+            <div class="venue-info">
+                <h2>Rose Garden</h2>
+                <p>Price: ₹2000 per plate</p>
+                <p>Distance: 5km | Rating: ⭐4.5</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="1500" data-distance="10" data-rating="4.0">
+            <img src="./assets/14.webp" alt="Ocean View Hall">
+            <div class="venue-info">
+                <h2>Ocean View Hall</h2>
+                <p>Price: ₹1500 per plate</p>
+                <p>Distance: 10km | Rating: ⭐4.0</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="3000" data-distance="2" data-rating="5.0">
+            <img src="./assets/15.webp" alt="Luxury Palace">
+            <div class="venue-info">
+                <h2>Luxury Palace</h2>
+                <p>Price: ₹3000 per plate</p>
+                <p>Distance: 2km | Rating: ⭐5.0</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="2000" data-distance="5" data-rating="4.5">
+            <img src="./assets/16.webp" alt="Rose Garden">
+            <div class="venue-info">
+                <h2>Rose Garden</h2>
+                <p>Price: ₹2000 per plate</p>
+                <p>Distance: 5km | Rating: ⭐4.5</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="1500" data-distance="10" data-rating="4.0">
+            <img src="/assets/17.webp" alt="Ocean View Hall">
+            <div class="venue-info">
+                <h2>Ocean View Hall</h2>
+                <p>Price: ₹1500 per plate</p>
+                <p>Distance: 10km | Rating: ⭐4.0</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="3000" data-distance="2" data-rating="5.0">
+            <img src="./assets/16.webp" alt="Luxury Palace">
+            <div class="venue-info">
+                <h2>Luxury Palace</h2>
+                <p>Price: ₹3000 per plate</p>
+                <p>Distance: 2km | Rating: ⭐5.0</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="2000" data-distance="5" data-rating="4.5">
+            <img src="./assets/1.jpg" alt="Rose Garden">
+            <div class="venue-info">
+                <h2>Rose Garden</h2>
+                <p>Price: ₹2000 per plate</p>
+                <p>Distance: 5km | Rating: ⭐4.5</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="1500" data-distance="10" data-rating="4.0">
+            <img src="./assets/17.webp" alt="Ocean View Hall">
+            <div class="venue-info">
+                <h2>Ocean View Hall</h2>
+                <p>Price: ₹1500 per plate</p>
+                <p>Distance: 10km | Rating: ⭐4.0</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="3000" data-distance="2" data-rating="5.0">
+            <img src="./assets/3.webp" alt="Luxury Palace">
+            <div class="venue-info">
+                <h2>Luxury Palace</h2>
+                <p>Price: ₹3000 per plate</p>
+                <p>Distance: 2km | Rating: ⭐5.0</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="2000" data-distance="5" data-rating="4.5">
+            <img src="./assets/1.jpg" alt="Rose Garden">
+            <div class="venue-info">
+                <h2>Rose Garden</h2>
+                <p>Price: ₹2000 per plate</p>
+                <p>Distance: 5km | Rating: ⭐4.5</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="1500" data-distance="10" data-rating="4.0">
+            <img src="./assets/2.webp" alt="Ocean View Hall">
+            <div class="venue-info">
+                <h2>Ocean View Hall</h2>
+                <p>Price: ₹1500 per plate</p>
+                <p>Distance: 10km | Rating: ⭐4.0</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+        <div class="venue-card" data-price="3000" data-distance="2" data-rating="5.0">
+            <img src="./assets/17.webp" alt="Luxury Palace">
+            <div class="venue-info">
+                <h2>Luxury Palace</h2>
+                <p>Price: ₹3000 per plate</p>
+                <p>Distance: 2km | Rating: ⭐5.0</p>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+
+            </div>
+        </div>
+    </div>
+    <section class="reviews">
+        <h2>What Our Customers Say</h2>
+        <div class="review-container">
+            <div class="review-card">
+                <p>"Dream Wedding Planner made our day perfect! Everything was beautifully managed."</p>
+                <h4>- Priya Sharma</h4>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <button class="book-btn" onclick="openBookingForm('Rose Garden')">Book Now</button>
+            </div>
+    
+            <div class="review-card">
+                <p>"Absolutely amazing experience! The team was professional and attentive to every detail."</p>
+                <h4>- Rahul Mehta</h4>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+    
+            <div class="review-card">
+                <p>"From venue selection to decorations, they handled everything smoothly!"</p>
+                <h4>- Ananya Verma</h4>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+    </section>
     <div id="footer"></div>
     <script src="./scripts/navbar.js" type="module"></script>
+    <script src="./scripts/book.js" type="module"></script>
     <script src="./scripts/footer.js" type="module"></script>
     <script src="./scripts/index.js"></script>
 </body>

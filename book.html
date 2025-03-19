@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Wedding</title>
+    <link rel="stylesheet" href="./style/book.css">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    <div id="nav"></div>
+    <!-- Booking Form Modal -->
+ <div id="bookingModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="venueTitle"></h2>
+        <form id="bookingForm">
+            <label for="weddingDate">Wedding Date:</label>
+            <input type="date" id="weddingDate" required>
+
+            <label for="weddingTime">Wedding Time:</label>
+            <input type="time" id="weddingTime" required>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </div>
+</div>
+    </div> 
+    </div>
+    <script src="./scripts/navbar.js" type="module"></script>
+    <script src="./scripts/book.js" type="module"></script>
+</body>
+</html>
+ 
+ 

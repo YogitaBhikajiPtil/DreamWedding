@@ -8,7 +8,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
     let password = document.getElementById('password').value;
     let confirmPassword = document.getElementById('confirmPassword').value;
     let errorMessage = document.getElementById('error-message');
-
+ 
     let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$/;
     errorMessage.textContent = "";
 
