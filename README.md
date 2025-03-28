@@ -3,8 +3,11 @@ Welcome to Dream Wedding Planner, your one-stop solution for finding and booking
 
 Features
 📍 Venue Search and Sorting: Search for venues and sort them based on price and rating
+
 📝 Booking Form: Book a venue by filling out the wedding form with details like date, time, and preferences.
+
 🌟 Customer Reviews: View what previous customers say about their wedding experiences.
+
 🖼️ Responsive Design: Enjoy a smooth and responsive UI with an elegant design.
 
 Technologies Used
