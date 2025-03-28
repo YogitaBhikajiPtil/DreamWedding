@@ -67,9 +67,9 @@ Fill in the wedding form with the necessary details.
 Submit the form to complete your booking.
 
 Folder Structure
-.
-├── assets            # Venue images and screenshots
 
+
+├── assets            # Venue images and screenshots
 ├── scripts           # JavaScript files
 
 │   ├── baseUrl.js
