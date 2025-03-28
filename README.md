@@ -68,8 +68,8 @@ Submit the form to complete your booking.
 
 Folder Structure
 
-
 ├── assets            # Venue images and screenshots
+
 ├── scripts           # JavaScript files
 
 │   ├── baseUrl.js
