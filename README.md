@@ -1,7 +1,9 @@
 Dream Wedding Planner
+
 Welcome to Dream Wedding Planner, your one-stop solution for finding and booking the perfect wedding venue. This website offers a seamless experience to explore venues, sort by price and rating, and book your dream wedding location effortlessly.
 
 Features
+
 📍 Venue Search and Sorting: Search for venues and sort them based on price and rating
 
 📝 Booking Form: Book a venue by filling out the wedding form with details like date, time, and preferences.
@@ -37,6 +39,7 @@ signup form
 
 
 Installation
+
 Clone this repository:
 git clone https://github.com/your-username/dream-wedding-planner.git
 
@@ -66,16 +69,39 @@ Submit the form to complete your booking.
 Folder Structure
 .
 ├── assets            # Venue images and screenshots
+
 ├── scripts           # JavaScript files
-│   ├── navbar.js
-│   ├── footer.js
+
+│   ├── baseUrl.js
+
+│   ├── book.js
+
+│   ├── contact.js
+
+│   ├── login..js
+
 │   ├── index.js
-│   ├── form.js
+
+│   ├── signup.js
+
+│   ├── index.js
+
+│   ├── navbar.js
+
 ├── style             # CSS files
+
 │   ├── index.css
-│   ├── form.css
+
+│   ├── login.css
+
+│   ├── signup.js
+
+│   ├── footer.js
+
 ├── index.html        # Main webpage
+
 ├── form.html         # Wedding form page
+
 └── server.js         # Backend server
 
 Future Enhancements
