@@ -11,10 +11,16 @@ Features
 🖼️ Responsive Design: Enjoy a smooth and responsive UI with an elegant design.
 
 Technologies Used
+
 HTML: Structure and layout
+
 CSS: Styling with responsive design
+
 JavaScript: Interactivity and form handling
-Node.js & Express: Backend for handling form submissions
+
+db.json:For storing user data
+
+Glitch: For deployment and backend management 
 
 
 
@@ -46,10 +52,15 @@ npm start
 Open http://localhost:3000 in your browser.
 
 Usage
+
 Browse through available wedding venues.
+
 Use the search and sorting features to filter options.
+
 Click the Book Now button for your preferred venue.
+
 Fill in the wedding form with the necessary details.
+
 Submit the form to complete your booking.
 
 Folder Structure
@@ -68,6 +79,9 @@ Folder Structure
 └── server.js         # Backend server
 
 Future Enhancements
+
 Add payment gateway integration.
+
 Implement user authentication for personalized bookings.
+
 Provide real-time booking status.
